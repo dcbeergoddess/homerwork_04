@@ -38,7 +38,31 @@ Adapt to multiple screen sizes
 5. what can be a function
 
 
+## Multiple Choice Questions
 
+1. What street does not exist in DC?
+    a. A Street
+    b. Hawaii Ave
+    c. J Street
+    d. Montanta Ave
+    ANWSER = c. J street
+
+2. What is the official music of DC
+
+3. What is the 
+
+var question = [
+        "What is 2 + 2?";
+        "Who is DC's house representative?";
+        "Does DC's house representative get a vote in congress?"
+        "Do streets with the letter J exist in DC?";
+        "Do streets with the letter A Exist in DC?";
+        "What is the official music of DC?"
+        "Is DC a state";
+        "What is 1 + 2";
+        "What city are the streets of DC based off of?"
+        "What did Amazon rebrand Crystal City as?"
+        "What does DC stand for?"
 
 
 
