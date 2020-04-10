@@ -1,0 +1,11 @@
+#startBtn {
+  position: center;
+  background-color: rgb(13, 3, 29);
+  border: none;
+  font-size: relative;
+  color: #FFFFFF;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+}
