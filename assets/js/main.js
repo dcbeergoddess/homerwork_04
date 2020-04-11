@@ -35,11 +35,14 @@ startBtn.addEventListener("click", function(event) {
   // found one
     if ("click"){
       containerStart.style.display = "none";
-      renderQuestion()
+      containerQuestion.style.display = "block";
+      currentQuestion = 0;
+      renderQuestion();
     }
   console.log(countdownTimer); 
 }, 
 // var timer = setInterval(...document, 100)
+// need to declare timer globally in order to reference througout 
 // need to replace countdownTimer...
 function startcoutdownTimer(){
   countdownTimer = setInterval(function() {
@@ -51,20 +54,25 @@ function startcoutdownTimer(){
   }, 1000);
 })
 
-// function timedTest(question, choices, answer){
-// }
-//logically load in timer and Question 1 and first set of choices
+
+// need function to determine correct anwser and if question is correct or incorrect:
+
+// indicate to answer is correct or incorrect:
+
+// If incorrect. subtract time (10 sec) qne // load up next question
+
+// If correct increment score and // load up next question
+
+//function/elements to keep score
+
+// load up Game Over indicatior score when
+    // time runs out or all questions answered
 
 
-
-
-// determine if question is correct or incorrect
-// indicate to answer is correct or incorrect 
-// If incorrect. subtract time (10 sec)
-// If correct increment score
-// load up next question
-// once one question is done can reuse code
-// load up Game over indication adn score
 // basic form to enter initials
-// store local to save info
+// store initials and score to local storage
+
+//create highscores.html to load after initials entered
+
+
 

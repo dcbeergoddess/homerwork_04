@@ -1,12 +1,9 @@
-// Define our questions
-// have an idea of our HTML layout
-// <h2> Countdown Timer - function
 
 //Possible way to build questions in html
 // <ul> choices - dynamically but choices into questions
 //<li> anwsers - dynamically put answers into choice
 
-// Make questions and answers array you call back as function throughout. 
+// Make questions and answers an array and make a function to call it back throughout. 
 
 // Create variables/select all elements for quiz
 
@@ -21,7 +18,7 @@ var containerQuestion = document.querySelector(".container-question");
 // var correctAnswer = questions.length -1;
 
 //create variable for current question index
-
+var currentQuestion = 0;
 
 
 
@@ -30,10 +27,10 @@ var containerQuestion = document.querySelector(".container-question");
 // watched video that mentioned anyone can see answer in console. Can access correct answer using var lastQuestionIndex = questions.length -1; need to look into this more
 
 
-var currentQuestion = 0;
+
 var questions = [
   {
-    question: "What is not an essential indgredient for brewing beer?",
+    question: "What is not an essential ingredient for brewing beer?",
     optionA: "water",
     optionB: "hops",
     optionC: "barley/grain",
@@ -71,18 +68,19 @@ var questions = [
     optionC: "Option C",
     optionD: "Option D",
     correct: "A" 
-  } 
-];
+  }, 
+]
 
+//Originally though about loop in a function for array. 
+// found that innerHTML will insert into html element I created
+n// create function to render questions
 
-//functions and loop for questions
-
-//put timer in global space so you can refer to it from any function
-
-// create function to render questions
+// hide questions until click event
+containerQuestion.style.display = "none";
 
 function renderQuestion (){
   var q = questions[currentQuestion];
+  containerQuestion.style.display = "";
   // trying out innerHTML to insert array elements
   question.innerHTML = "<h2>" + q.question + "<h2>";
   optionA.innerHTML = q.optionA;
@@ -91,10 +89,12 @@ function renderQuestion (){
   optionD.innerHTML = q.optionD;
 
 };
-currentquestion = 0
-renderQuestion();
+// currentQuestion = 0
+// renderQuestion();
 
-// move to next question throughout currentQuestion++ then render qustion 
+// move to next question throughout currentQuestion++ then  renderQuestion(); in mainl.js
+//if I can't get that to work i will look into my originally idea of creating a loop to render 
+
 console.log(renderQuestion);
 
 // // before rendor hide start buttton
